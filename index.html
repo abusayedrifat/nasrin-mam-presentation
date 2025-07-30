@@ -1,0 +1,573 @@
+        <!-- @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        } -->
+        
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Environmental Issues in Developed World</title>
+    
+</head>
+<body>
+    <div class="presentation-container">
+        <div class="slide-counter">
+            <span id="currentSlide">1</span> / <span id="totalSlides">10</span>
+        </div>
+
+        <!-- Slide : Welcome -->
+        <div class="slide active" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.95) 0%, rgba(5, 150, 105, 0.9) 100%); color: white; justify-content: center; padding: 40px;">
+            <div style="font-size: 4rem; margin-bottom: 30px;">🎯</div>
+            <h1 style="-webkit-text-fill-color: white; font-size: 3.5rem; margin-bottom: 40px;">Welcome to Our Presentation</h1>
+            <h2 style="color: rgba(255,255,255,0.9); font-size: 2.2rem; margin-bottom: 50px; font-weight: 400;">Environmental Issues and Concerns in the Developed World</h2>
+            
+            <div style="background: rgba(255,255,255,0.15); padding: 30px; border-radius: 20px; backdrop-filter: blur(10px); max-width: 800px;">
+                <h3 style="color: white; font-size: 1.8rem; margin-bottom: 25px; text-align: center;">Presented by Group Members:</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; font-size: 1.2rem;">
+                    <div style="padding: 12px; background: rgba(255,255,255,0.1); border-radius: 10px; text-align: center;">
+                        <strong>Abu Sayed Rifat</strong><br>
+                        <span style="opacity: 0.8;">2210227103</span>
+                    </div>
+                    <div style="padding: 12px; background: rgba(255,255,255,0.1); border-radius: 10px; text-align: center;">
+                        <strong>Sourav Roy</strong><br>
+                        <span style="opacity: 0.8;">2210927122</span>
+                    </div>
+                    <div style="padding: 12px; background: rgba(255,255,255,0.1); border-radius: 10px; text-align: center;">
+                        <strong>MD. Masudur Rahman</strong><br>
+                        <span style="opacity: 0.8;">2210427136</span>
+                    </div>
+                    <div style="padding: 12px; background: rgba(255,255,255,0.1); border-radius: 10px; text-align: center;">
+                        <strong>Anasullah Sadi</strong><br>
+                        <span style="opacity: 0.8;">2210227156</span>
+                    </div>
+                    <div style="padding: 12px; background: rgba(255,255,255,0.1); border-radius: 10px; text-align: center;">
+                        <strong>Al Mamur</strong><br>
+                        <span style="opacity: 0.8;">2110727112</span>
+                    </div>
+                    <div style="padding: 12px; background: rgba(255,255,255,0.1); border-radius: 10px; text-align: center;">
+                        <strong>Md. Julfikar Sheikh</strong><br>
+                        <span style="opacity: 0.8;">2110927146</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 40px;padding-bottom: 50px; font-size: 1.1rem; opacity: 0.9; text-align: center;">
+                <p>Let's explore the environmental challenges facing our modern world</p>
+            </div>
+        </div>
+
+        <!-- Slide 1: Title -->
+        <div class="slide active title-slide">
+            <div class="environmental-icon">🌍</div>
+            <h1>Environmental Issues <br> and Concerns in the Developed World</h1>
+            <p class="subtitle" style="color: black; font-size: xx-large">Addressing the Environmental Paradox of Prosperity</p>
+            <div class="overview-grid ">
+                <div class="overview-item ">
+                    <div style="font-size: 2rem;">🏭</div>
+                    <p >Urban Air Quality</p>
+                </div>
+                <div class="overview-item">
+                    <div style="font-size: 2rem;">♻️</div>
+                    <p >Waste Management</p>
+                </div>
+                <div class="overview-item">
+                    <div style="font-size: 2rem;">⚡</div>
+                    <p >Energy Transition</p>
+                </div>
+                <div class="overview-item">
+                    <div style="font-size: 2rem;">🌡️</div>
+                    <p >Climate Impact</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Overview -->
+        <div class="slide">
+            <div class="environmental-icon">🔍</div>
+            <h2>Why Environmental Issues Matter More in Developed Nations</h2>
+            <div class="content-grid">
+                <div class="content-box">
+                    <h3>Higher Consumption Patterns</h3>
+                    <ul>
+                        <li onclick="toggleDetails(this)">Per capita resource consumption 5-10x higher than developing nations
+                            <div class="details">Americans consume 4x more water, 3x more food, and 7x more fossil fuels per person compared to the global average</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Greater environmental footprint despite green awareness
+                            <div class="details">The average American's carbon footprint is 16 tons CO2/year vs. 4 tons global average, despite 70% claiming environmental concern</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Complex supply chains masking environmental impact
+                            <div class="details">Products travel average 1,500 miles before reaching consumers, with hidden environmental costs in production and transportation</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h3>Advanced Infrastructure Challenges</h3>
+                    <div class="image-container">
+                        <img src="./slide2.jpg" alt="Urban infrastructure" class="slide-image">
+                        <div class="image-caption">Dense urban infrastructure in developed cities</div>
+                    </div>
+                    <ul>
+                        <li onclick="toggleDetails(this)">Legacy systems resistant to sustainable upgrades
+                            <div class="details">Upgrading aging infrastructure could cost $2.6 trillion in US alone, with systems built for 50-100 year lifespans</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Urban density creating concentrated pollution
+                            <div class="details">Cities occupy 3% of land but consume 78% of energy and produce 60% of greenhouse gas emissions</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Economic capacity to implement solutions vs. political will
+                            <div class="details">Despite having resources, political cycles and lobbying often delay implementation of known environmental solutions</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Urban Air Quality Crisis -->
+        <div class="slide">
+            <div class="environmental-icon">🏭</div>
+            <h2>Urban Air Quality Crisis</h2>
+            <div class="stats-highlight">
+                London: 9,500 deaths annually from air pollution | Los Angeles: $13.8B economic cost
+            </div>
+            <div class="image-container">
+                <img src="./slide3.jpg" alt="Air pollution in city" class="slide-image">
+                <div class="image-caption">Smog over Los Angeles - a common sight in major cities</div>
+            </div>
+            <div class="content-grid">
+                <div class="content-box">
+                    <h3>Major Pollution Sources</h3>
+                    <ul>
+                        <li onclick="toggleDetails(this)">Vehicle emissions in dense urban areas
+                            <div class="details">Transportation accounts for 29% of US greenhouse gas emissions, with 1.4 billion cars worldwide producing 4.6 billion tons CO2 annually</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Industrial activities and power generation
+                            <div class="details">Coal-fired power plants emit 2.2 billion tons CO2 yearly, plus sulfur dioxide and nitrogen oxides causing acid rain and smog</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Construction and building materials
+                            <div class="details">Cement production alone accounts for 8% of global CO2 emissions, with buildings consuming 40% of global energy</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Shipping and aviation hubs
+                            <div class="details">International shipping produces 1 billion tons CO2/year, aviation adds 900 million tons, both growing rapidly</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h3>Health & Economic Impact</h3>
+                    <ul>
+                        <li onclick="toggleDetails(this)">Respiratory diseases and cardiovascular problems
+                            <div class="details">Air pollution causes 7 million premature deaths globally, with children 10x more susceptible to respiratory issues</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Reduced life expectancy in major cities
+                            <div class="details">Living in polluted cities reduces life expectancy by 1-3 years, equivalent to smoking 1.8 cigarettes daily</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Healthcare costs exceeding $150B annually
+                            <div class="details">In US alone, air pollution costs $150B in health damages, $5B in lost productivity annually</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Lost productivity and economic burden
+                            <div class="details">Sick days due to pollution cost US economy $13B yearly, with cognitive performance dropping 6% on high pollution days</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="solution-box">
+                <h3>Solutions Being Implemented</h3>
+                <p>Ultra Low Emission Zones (London), Electric Vehicle Incentives, Green Building Standards, Public Transportation Expansion</p>
+            </div>
+        </div>
+
+        <!-- Slide 4: Waste Management -->
+        <div class="slide">
+            <div class="environmental-icon">♻️</div>
+            <h2>Waste Management & Overconsumption</h2>
+            <div class="stats-highlight">
+                US generates 268M tons of waste annually | Only 32% recycled effectively
+            </div>
+            <div class="image-container">
+                <img src="./slide4.webp" alt="Plastic waste pollution" class="slide-image">
+                <div class="image-caption">Plastic waste - a growing crisis in developed nations</div>
+            </div>
+            <div class="content-grid">
+                <div class="content-box">
+                    <h3>Plastic & E-Waste Crisis</h3>
+                    <ul>
+                        <li onclick="toggleDetails(this)">40% of plastic waste from packaging
+                            <div class="details">Single-use packaging generates 141 million tons of waste yearly, with only 14% recycled effectively globally</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">54M tons of e-waste generated globally
+                            <div class="details">Only 20% of e-waste is properly recycled, containing $57 billion worth of recoverable materials like gold and silver</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Microplastics in food chain and water systems
+                            <div class="details">Humans consume 5g of plastic weekly (credit card equivalent), found in 83% of tap water samples worldwide</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Toxic materials in landfills
+                            <div class="details">E-waste contains lead, mercury, cadmium that leach into groundwater, affecting water supplies for decades</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h3>Fast Fashion Impact</h3>
+                    <ul>
+                        <li onclick="toggleDetails(this)">2.1B tons of CO2 emissions annually
+                            <div class="details">Fashion industry produces more emissions than aviation and shipping combined, 10% of global carbon emissions</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">20% of global water pollution
+                            <div class="details">Textile dyeing is 2nd largest water polluter, using 79 billion cubic meters of water annually</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">92M tons of textile waste yearly
+                            <div class="details">Equivalent to garbage truck of textiles dumped every second, with average garment worn only 7 times</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Synthetic fibers never decompose
+                            <div class="details">Polyester takes 200+ years to decompose, releases microplastics with every wash cycle</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="solution-box">
+                <h3>Circular Economy Initiatives</h3>
+                <p>Extended Producer Responsibility, Zero Waste Cities, Sustainable Fashion Brands, Digital Product Passports</p>
+            </div>
+        </div>
+
+        <!-- Slide 5: Energy Transition -->
+        <div class="slide">
+            <div class="environmental-icon">⚡</div>
+            <h2>Energy Transition Challenges</h2>
+            <div class="stats-highlight">
+                Germany: €500B invested in Energiewende | Still 28% fossil fuel dependent
+            </div>
+            <div class="image-container">
+                <img src="./slide5.jpg" alt="Wind turbines renewable energy" class="slide-image">
+                <div class="image-caption">Wind energy infrastructure - part of Germany's renewable transition</div>
+            </div>
+            <div class="content-grid">
+                <div class="content-box">
+                    <h3>Fossil Fuel Dependence</h3>
+                    <ul>
+                        <li onclick="toggleDetails(this)">Despite green commitments, 60-80% fossil fuel reliance
+                            <div class="details">Even leading green economies like Denmark still rely on 50%+ fossil fuels, showing transition complexity</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Natural gas as "transition fuel" controversy
+                            <div class="details">Gas produces 50% less CO2 than coal but still emits methane (28x more potent than CO2) during extraction</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Industrial processes hard to decarbonize
+                            <div class="details">Steel, cement, chemicals need extreme heat (1500°C+) difficult to achieve with renewables, representing 25% of emissions</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Transportation sector slow to electrify
+                            <div class="details">EVs still only 3% of global vehicle fleet, with aviation and shipping having no viable zero-carbon alternatives yet</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h3>Grid Infrastructure Challenges</h3>
+                    <ul>
+                        <li onclick="toggleDetails(this)">Aging electrical grid systems
+                            <div class="details">US power grid averages 40 years old, designed for central power plants not distributed renewable sources</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Intermittency of renewable sources
+                            <div class="details">Solar/wind can drop to zero output, requiring backup power or massive storage solutions not yet economically viable</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Energy storage technology limitations
+                            <div class="details">Current batteries store only 4 hours of grid power, need weeks/months storage for seasonal renewable variations</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Smart grid implementation costs
+                            <div class="details">Upgrading to smart grids requires $3.5 trillion globally over next 30 years according to IEA estimates</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="solution-box">
+                <h3>Germany's Energy Transition Case Study</h3>
+                <p>World's largest renewable energy program, but faced challenges: high costs, grid instability, and industrial competitiveness concerns</p>
+            </div>
+        </div>
+
+        <!-- Slide 6: Climate Change Impacts -->
+        <div class="slide">
+            <div class="environmental-icon">🌡️</div>
+            <h2>Climate Change Impacts</h2>
+            <div class="stats-highlight">
+                2023: $90B in weather-related damages in US alone | 70,000 heat deaths in Europe
+            </div>
+            <div class="image-container">
+                <img src="./slide6.webp" alt="Wildfire climate change" class="slide-image">
+                <div class="image-caption">California wildfire - extreme weather becoming more frequent</div>
+            </div>
+            <div class="content-grid">
+                <div class="content-box">
+                    <h3>Extreme Weather Events</h3>
+                    <ul>
+                        <li onclick="toggleDetails(this)">Record-breaking heatwaves and droughts
+                            <div class="details">2023 saw 2,000+ heat records broken globally, with European heatwave reaching 48.8°C (119.8°F) in Italy</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Increased frequency of flooding
+                            <div class="details">Urban flooding events increased 400% since 1980, with "100-year floods" now occurring every 10-20 years</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Devastating wildfires in Australia, California
+                            <div class="details">2019-20 Australian fires burned area size of Florida, killing 3 billion animals and costing $103 billion</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Hurricane intensity and storm surges
+                            <div class="details">Category 4-5 hurricanes doubled since 1980, with storm surges reaching 20+ feet, affecting millions in coastal cities</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h3>Economic Disruption</h3>
+                    <ul>
+                        <li onclick="toggleDetails(this)">Insurance industry facing unprecedented claims
+                            <div class="details">Climate damages cost insurers $100B+ annually, forcing some to stop covering high-risk areas entirely</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Agricultural productivity declining
+                            <div class="details">Crop yields dropping 2-6% per decade due to heat stress, threatening food security despite advanced farming tech</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Tourism industry climate vulnerabilities
+                            <div class="details">Ski resorts losing 50+ days of snow annually, coral reef tourism declining as 50% of reefs face bleaching</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Real estate values in risk zones plummeting
+                            <div class="details">Coastal properties losing $7.4B in value due to sea level rise, with flood-prone areas seeing 20-30% price drops</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="solution-box">
+                <h3>Infrastructure Vulnerability</h3>
+                <p>Critical infrastructure (power grids, transportation, water systems) not designed for extreme weather patterns, requiring massive adaptation investments</p>
+            </div>
+        </div>
+
+        <!-- Slide 7: Water Scarcity -->
+        <div class="slide">
+            <div class="environmental-icon">💧</div>
+            <h2>Water Scarcity & Quality Issues</h2>
+            <div class="stats-highlight">
+                California: 40% of water from depleted groundwater | Australia: $13B desalination investment
+            </div>
+            <div class="content-grid">
+                <div class="content-box">
+                    <h3>Groundwater Depletion</h3>
+                    <ul>
+                        <li>Aquifers depleted faster than natural recharge</li>
+                        <li>Agriculture consuming 70% of freshwater</li>
+                        <li>Land subsidence from over-extraction</li>
+                        <li>Saltwater intrusion in coastal areas</li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h3>Industrial Contamination</h3>
+                    <ul>
+                        <li>PFAS "forever chemicals" in water supplies</li>
+                        <li>Pharmaceutical residues in drinking water</li>
+                        <li>Mining and fracking water contamination</li>
+                        <li>Urban runoff and stormwater pollution</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="solution-box">
+                <h3>Case Studies: California & Australia</h3>
+                <p>Mandatory water restrictions, desalination plants, water recycling programs, and smart irrigation technologies</p>
+            </div>
+        </div>
+
+        <!-- Slide 8: Innovative Solutions -->
+        <div class="slide">
+            <div class="environmental-icon">🚀</div>
+            <h2>Innovative Solutions & Green Technologies</h2>
+            <div class="content-grid">
+                <div class="content-box">
+                    <h3>Technological Breakthroughs</h3>
+                    <ul>
+                        <li>Carbon capture and storage (CCS) deployment</li>
+                        <li>Green hydrogen production scaling</li>
+                        <li>Advanced battery storage systems</li>
+                        <li>AI-powered energy optimization</li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h3>Nature-Based Solutions</h3>
+                    <ul>
+                        <li>Urban forests and green corridors</li>
+                        <li>Wetland restoration for flood control</li>
+                        <li>Regenerative agriculture practices</li>
+                        <li>Living shorelines and green infrastructure</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="solution-box">
+                <h3>Emerging Technologies</h3>
+                <p>Lab-grown materials, vertical farming, fusion energy research, and biotechnology solutions for environmental remediation</p>
+            </div>
+        </div>
+
+        <!-- Slide 9: Policy Responses -->
+        <div class="slide">
+            <div class="environmental-icon">🏛️</div>
+            <h2>Policy Responses & International Cooperation</h2>
+            <div class="content-grid">
+                <div class="content-box">
+                    <h3>Major Policy Initiatives</h3>
+                    <ul>
+                        <li>EU Green Deal: €1 trillion investment plan</li>
+                        <li>US Inflation Reduction Act: $370B climate spending</li>
+                        <li>Carbon pricing mechanisms in 40+ jurisdictions</li>
+                        <li>Net-zero commitments by 2050</li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h3>International Frameworks</h3>
+                    <ul>
+                        <li>Paris Agreement implementation</li>
+                        <li>G7/G20 climate commitments</li>
+                        <li>Technology transfer partnerships</li>
+                        <li>Green finance and sustainable investment</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="solution-box">
+                <h3>Challenges in Implementation</h3>
+                <p>Political resistance, industry lobbying, public acceptance of lifestyle changes, and balancing economic growth with environmental goals</p>
+            </div>
+        </div>
+
+        <!-- Slide 10: Call to Action -->
+        <div class="slide">
+            <div class="environmental-icon">🌱</div>
+            <h2>Future Outlook & Call to Action</h2>
+            <div class="content-grid">
+                <div class="content-box">
+                    <h3>What Developed Nations Must Do</h3>
+                    <ul>
+                        <li>Lead by example in emissions reduction</li>
+                        <li>Accelerate green technology development</li>
+                        <li>Reform consumption-based economic models</li>
+                        <li>Support global climate adaptation efforts</li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h3>Individual & Collective Action</h3>
+                    <ul>
+                        <li>Conscious consumption and lifestyle changes</li>
+                        <li>Support for sustainable businesses</li>
+                        <li>Political engagement and advocacy</li>
+                        <li>Education and awareness campaigns</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="solution-box">
+                <h3>The Path Forward</h3>
+                <p>Environmental challenges in developed nations require urgent, coordinated action combining technological innovation, policy reform, and fundamental shifts in how we define prosperity and progress.</p>
+            </div>
+        </div>
+
+         <!-- Slide 12: Thank You -->
+        <div class="slide" style="background: linear-gradient(135deg, rgba(147, 51, 234, 0.95) 0%, rgba(126, 34, 206, 0.9) 100%); color: white; justify-content: center; padding: 40px;">
+            <div style="font-size: 4rem; margin-bottom: 30px;">🙏</div>
+            <h1 style="-webkit-text-fill-color: white; font-size: 4rem; margin-bottom: 30px;">Thank You!</h1>
+            <h2 style="color: rgba(255,255,255,0.9); font-size: 1.8rem; margin-bottom: 40px; font-weight: 400;">For Your Attention & Time</h2>
+            
+            <div style="background: rgba(255,255,255,0.15); padding: 25px; border-radius: 20px; backdrop-filter: blur(10px); max-width: 700px; margin-bottom: 30px;">
+                <h3 style="color: white; font-size: 1.6rem; margin-bottom: 20px; text-align: center;">Questions & Discussion</h3>
+                <p style="font-size: 1.2rem; line-height: 1.6; opacity: 0.9; text-align: center; color: rgb(28, 28, 28);">
+                    We hope this presentation has provided valuable insights into the environmental challenges facing developed nations. 
+                    We welcome your questions and look forward to discussing these important issues further.
+                </p>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; backdrop-filter: blur(5px);">
+                <h4 style="color: white; font-size: 1.3rem; margin-bottom: 15px; text-align: center;">Presented by:</h4>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; font-size: 0.95rem;">
+                    <div style="text-align: center; padding: 8px;">
+                        <strong>Abu Sayed Rifat</strong><br>
+                        <span style="opacity: 0.8;">2210227103</span>
+                    </div>
+                    <div style="text-align: center; padding: 8px;">
+                        <strong>Sourav Roy</strong><br>
+                        <span style="opacity: 0.8;">2210927122</span>
+                    </div>
+                    <div style="text-align: center; padding: 8px;">
+                        <strong>MD. Masudur Rahman</strong><br>
+                        <span style="opacity: 0.8;">2210427136</span>
+                    </div>
+                    <div style="text-align: center; padding: 8px;">
+                        <strong>Anasullah Sadi</strong><br>
+                        <span style="opacity: 0.8;">2210227156</span>
+                    </div>
+                    <div style="text-align: center; padding: 8px;">
+                        <strong>Al Mamur</strong><br>
+                        <span style="opacity: 0.8;">2110727112</span>
+                    </div>
+                    <div style="text-align: center; padding: 8px;">
+                        <strong>Md. Julfikar Sheikh</strong><br>
+                        <span style="opacity: 0.8;">2110927146</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 25px; padding-bottom: 50px; font-size: 1rem; opacity: 0.8; text-align: center;">
+                <p style="color: rgb(0, 0, 0);">🌍 Together, we can make a difference for our planet 🌱</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">← Previous</button>
+        <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">Next →</button>
+    </div>
+
+    <script>
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        document.getElementById('totalSlides').textContent = totalSlides;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active', 'prev');
+                if (i === index) {
+                    slide.classList.add('active');
+                } else if (i < index) {
+                    slide.classList.add('prev');
+                }
+            });
+
+            document.getElementById('currentSlide').textContent = index + 1;
+            
+            // Update navigation buttons
+            document.getElementById('prevBtn').disabled = index === 0;
+            document.getElementById('nextBtn').disabled = index === totalSlides - 1;
+        }
+
+        function changeSlide(direction) {
+            const newIndex = currentSlideIndex + direction;
+            if (newIndex >= 0 && newIndex < totalSlides) {
+                currentSlideIndex = newIndex;
+                showSlide(currentSlideIndex);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowLeft') {
+                changeSlide(-1);
+            } else if (event.key === 'ArrowRight') {
+                changeSlide(1);
+            }
+        });
+
+        // Interactive list functionality
+        function toggleDetails(element) {
+            element.classList.toggle('expanded');
+        }
+
+        // Initialize
+        showSlide(0);
+    </script>
+</body>
+</html>
