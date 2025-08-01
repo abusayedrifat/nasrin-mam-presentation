@@ -145,7 +145,6 @@
                 max-height: 200px;
             }
         }
-      
 
         .environmental-icon {
             font-size: 3rem;
@@ -260,10 +259,6 @@
             border-radius: 10px;
             text-align: center;
             transition: transform 0.3s ease;
-        
-        }
-        .firstSlide-text{
-            color: black;
         }
 
         .overview-item:hover {
@@ -288,6 +283,7 @@
             border-radius: 10px;
             margin: 15px 0;
             flex-shrink: 0;
+            width: 65%;
         }
 
         .slide-image {
@@ -311,6 +307,8 @@
             margin-top: 8px;
             font-style: italic;
         }
+
+        @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(30px);
@@ -319,7 +317,7 @@
                 opacity: 1;
                 transform: translateY(0);
             }
-    
+        }
 
         .slide.active .content-box,
         .slide.active .overview-item {
@@ -341,4 +339,243 @@
         .slide.active .overview-item:nth-child(4) {
             animation-delay: 0.3s;
         }
-  
+
+        /* Mobile Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .slide {
+                padding: 20px 15px 100px 15px;
+                margin: 10px;
+                border-radius: 15px;
+            }
+
+            .slide h1 {
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
+
+            .slide h2 {
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+            }
+
+            .slide h3 {
+                font-size: 1.4rem;
+                margin-bottom: 12px;
+            }
+
+            .slide p, .slide li {
+                font-size: 1rem;
+                line-height: 1.4;
+            }
+
+            .environmental-icon {
+                font-size: 2.5rem;
+                margin-bottom: 15px;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .content-box {
+                padding: 15px;
+            }
+
+            .overview-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+                padding-bottom: 60px;
+            }
+
+            .overview-item {
+                padding: 12px 8px;
+            }
+
+            .stats-highlight {
+                font-size: 0.85rem;
+                padding: 10px 15px;
+                text-align: center;
+            }
+
+            .solution-box {
+                width: 100%;
+                padding: 12px;
+                font-size: 0.95rem;
+            }
+
+            .slide-image {
+                max-width: 100%;
+                height: 150px;
+            }
+
+            .image-caption {
+                font-size: 0.9rem;
+            }
+
+            .slide-counter {
+                top: 15px;
+                right: 15px;
+                padding: 6px 12px;
+                font-size: 13px;
+            }
+
+            .navigation {
+                bottom: 15px;
+                gap: 10px;
+                padding: 6px 12px;
+            }
+
+            .nav-btn {
+                padding: 8px 14px;
+                font-size: 13px;
+            }
+
+            .title-slide h1 {
+                font-size: 2.2rem;
+            }
+
+            .subtitle {
+                font-size: 1.1rem;
+            }
+
+            /* Welcome slide specific mobile styles */
+            .slide[style*="background: linear-gradient(135deg, rgba(16, 185, 129"] h1 {
+                font-size: 2.5rem !important;
+                margin-bottom: 25px !important;
+            }
+
+            .slide[style*="background: linear-gradient(135deg, rgba(16, 185, 129"] h2 {
+                font-size: 1.6rem !important;
+                margin-bottom: 30px !important;
+            }
+
+            .slide[style*="background: linear-gradient(135deg, rgba(16, 185, 129"] h3 {
+                font-size: 1.4rem !important;
+                margin-bottom: 20px !important;
+            }
+
+            .slide[style*="background: linear-gradient(135deg, rgba(16, 185, 129"] div[style*="display: grid; grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+                gap: 10px !important;
+                font-size: 1rem !important;
+            }
+
+            /* Thank you slide specific mobile styles */
+            .slide[style*="background: linear-gradient(135deg, rgba(147, 51, 234"] h1 {
+                font-size: 2.8rem !important;
+                margin-bottom: 25px !important;
+            }
+
+            .slide[style*="background: linear-gradient(135deg, rgba(147, 51, 234"] h2 {
+                font-size: 1.4rem !important;
+                margin-bottom: 30px !important;
+            }
+
+            .slide[style*="background: linear-gradient(135deg, rgba(147, 51, 234"] div[style*="display: grid; grid-template-columns: repeat(3, 1fr)"] {
+                grid-template-columns: 1fr !important;
+                gap: 8px !important;
+                font-size: 0.85rem !important;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .slide {
+                padding: 15px 10px 90px 10px;
+                margin: 5px;
+            }
+
+            .slide h1 {
+                font-size: 1.8rem;
+            }
+
+            .slide h2 {
+                font-size: 1.6rem;
+            }
+
+            .slide h3 {
+                font-size: 1.3rem;
+            }
+
+            .slide p, .slide li {
+                font-size: 0.95rem;
+            }
+
+            .environmental-icon {
+                font-size: 2rem;
+            }
+
+            .overview-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .overview-item {
+                padding: 10px;
+            }
+
+            .stats-highlight {
+                font-size: 0.8rem;
+                padding: 8px 12px;
+            }
+
+            .slide-image {
+                height: 120px;
+            }
+
+            .nav-btn {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+
+            .title-slide h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            /* Welcome slide extra small mobile styles */
+            .slide[style*="background: linear-gradient(135deg, rgba(16, 185, 129"] h1 {
+                font-size: 2rem !important;
+            }
+
+            .slide[style*="background: linear-gradient(135deg, rgba(16, 185, 129"] h2 {
+                font-size: 1.4rem !important;
+            }
+
+            .slide[style*="background: linear-gradient(135deg, rgba(16, 185, 129"] h3 {
+                font-size: 1.2rem !important;
+            }
+
+            /* Thank you slide extra small mobile styles */
+            .slide[style*="background: linear-gradient(135deg, rgba(147, 51, 234"] h1 {
+                font-size: 2.2rem !important;
+            }
+
+            .slide[style*="background: linear-gradient(135deg, rgba(147, 51, 234"] h2 {
+                font-size: 1.2rem !important;
+            }
+        }
+
+        /* Touch interactions for mobile */
+        @media (hover: none) and (pointer: coarse) {
+            .slide li:hover {
+                background: none;
+                transform: none;
+            }
+
+            .slide li:active {
+                background: rgba(42, 82, 152, 0.15);
+            }
+
+            .overview-item:hover {
+                transform: none;
+            }
+
+            .nav-btn:hover {
+                transform: none;
+                background: rgba(30, 60, 114, 0.95);
+            }
+        }
+   

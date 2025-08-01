@@ -1,15 +1,4 @@
-        <!-- @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        } -->
-        
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -112,7 +101,7 @@
                 <div class="content-box">
                     <h3>Advanced Infrastructure Challenges</h3>
                     <div class="image-container">
-                        <img src="./slide2.jpg" alt="Urban infrastructure" class="slide-image">
+                        <img src="./slide2.jpeg" alt="Urban infrastructure" class="slide-image">
                         <div class="image-caption">Dense urban infrastructure in developed cities</div>
                     </div>
                     <ul>
@@ -289,6 +278,59 @@
             </div>
         </div>
 
+          <!-- Slide 7: Nuclear Energy & Waste Crisis -->
+        <div class="slide">
+            <div class="environmental-icon">☢️</div>
+            <h2>Nuclear Energy & Unimaginable Nuclear Waste Risks</h2>
+            <div class="stats-highlight">
+                Global nuclear waste: 400,000+ tons | Half-life: Up to 24,000 years | No permanent solution exists
+            </div>
+            <div class="image-container">
+                <img src="./contaminacion-nuclear.jpg" alt="Nuclear power plant cooling towers" class="slide-image">
+                <div class="image-caption">Nuclear power plants - clean energy with dangerous legacy waste</div>
+            </div>
+            <div class="content-grid">
+                <div class="content-box">
+                    <h3>Nuclear Energy Paradox</h3>
+                    <ul>
+                        <li onclick="toggleDetails(this)">Clean electricity generation vs. radioactive waste
+                            <div class="details">Nuclear produces 20% of US electricity with zero carbon emissions during operation, but creates highly radioactive waste lasting millennia</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Developed nations' nuclear dependency
+                            <div class="details">France: 70% nuclear, US: 93 reactors, Japan restarting post-Fukushima. Total 440+ reactors globally in developed nations</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Aging reactor infrastructure concerns
+                            <div class="details">Average reactor age 31 years, many operating beyond 40-year design life. Decommissioning costs $300M-$5.7B per reactor</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Public acceptance declining after accidents
+                            <div class="details">Chernobyl (1986), Fukushima (2011) created lasting fear. Germany shutting all plants by 2023, costing €46 billion</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-box">
+                    <h3>Nuclear Waste Crisis</h3>
+                    <ul>
+                        <li onclick="toggleDetails(this)">High-level radioactive waste accumulation
+                            <div class="details">83,000 tons in US alone, growing by 2,000 tons yearly. Remains lethal for 10,000+ years, requiring isolation from biosphere</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">No permanent disposal solution implemented
+                            <div class="details">Only Finland has operational deep repository (Onkalo). US abandoned Yucca Mountain project after $15B investment</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Temporary storage becoming permanent risk
+                            <div class="details">Spent fuel pools at 75%+ capacity. Dry cask storage intended for 20 years now lasting 60+. Vulnerable to terrorism/natural disasters</div>
+                        </li>
+                        <li onclick="toggleDetails(this)">Intergenerational ethical burden
+                            <div class="details">Today's energy benefits saddle future generations with 24,000-year waste management responsibility and $500B+ cleanup costs</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="solution-box">
+                <h3>Current Challenges & Dilemmas</h3>
+                <p>Developed nations face impossible choice: continue nuclear for climate goals while creating permanent waste problem, or phase out risking increased fossil fuel dependence. Transport of waste across borders raises international tensions and accident risks.</p>
+            </div>
+        </div>
+
         <!-- Slide 6: Climate Change Impacts -->
         <div class="slide">
             <div class="environmental-icon">🌡️</div>
@@ -349,6 +391,10 @@
             <div class="stats-highlight">
                 California: 40% of water from depleted groundwater | Australia: $13B desalination investment
             </div>
+            <div class="image-container">
+                <img src="./slide9.jpg" alt="Wildfire climate change" class="slide-image">
+                <div class="image-caption">Water Stress: A Global Problem That&apos;s Getting Worse</div>
+            </div>
             <div class="content-grid">
                 <div class="content-box">
                     <h3>Groundwater Depletion</h3>
@@ -379,6 +425,10 @@
         <div class="slide">
             <div class="environmental-icon">🚀</div>
             <h2>Innovative Solutions & Green Technologies</h2>
+            <div class="image-container">
+                <img src="./slide8.jpg" alt="Wildfire climate change" class="slide-image">
+                <div class="image-caption">Green technology is changing the way we live, work, and play</div>
+            </div>
             <div class="content-grid">
                 <div class="content-box">
                     <h3>Technological Breakthroughs</h3>
@@ -409,6 +459,10 @@
         <div class="slide">
             <div class="environmental-icon">🏛️</div>
             <h2>Policy Responses & International Cooperation</h2>
+            <div class="image-container">
+                <img src="./slide10.jpg" alt="Wildfire climate change" class="slide-image">
+                <div class="image-caption" >International cooperation to developing countries to improve how they manage their disaster risk for sustainable development.</div>
+            </div>
             <div class="content-grid">
                 <div class="content-box">
                     <h3>Major Policy Initiatives</h3>
@@ -439,6 +493,10 @@
         <div class="slide">
             <div class="environmental-icon">🌱</div>
             <h2>Future Outlook & Call to Action</h2>
+            <div class="image-container">
+                <img src="./slide11.jpg" alt="Wildfire climate change" class="slide-image">
+                <div class="image-caption">One way to chart the future is to critically reflect on the past.</div>
+            </div>
             <div class="content-grid">
                 <div class="content-box">
                     <h3>What Developed Nations Must Do</h3>
@@ -564,6 +622,34 @@
         // Interactive list functionality
         function toggleDetails(element) {
             element.classList.toggle('expanded');
+        }
+
+        // Touch/swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener('touchstart', function(event) {
+            touchStartX = event.changedTouches[0].screenX;
+        });
+
+        document.addEventListener('touchend', function(event) {
+            touchEndX = event.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const swipeDistance = touchEndX - touchStartX;
+            
+            if (Math.abs(swipeDistance) > swipeThreshold) {
+                if (swipeDistance > 0) {
+                    // Swipe right - go to previous slide
+                    changeSlide(-1);
+                } else {
+                    // Swipe left - go to next slide
+                    changeSlide(1);
+                }
+            }
         }
 
         // Initialize
